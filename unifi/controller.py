@@ -4,7 +4,7 @@ try:
     # urllib2.URLError: <urlopen error [Errno 1] _ssl.c:504:
     # error:14077438:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert internal error>
     import _ssl
-    _ssl.PROTOCOL_SSLv23 = _ssl.PROTOCOL_SSLv3
+    _ssl.PROTOCOL_SSLv23 = _ssl.PROTOCOL_TLSv1
 except:
     pass
 
