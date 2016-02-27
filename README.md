@@ -47,7 +47,7 @@ if (`/bin/bash /usr/local/bin/unifi-sql-bash %{Calling-Station-Id}`) {
 }
 else {
 update proxy-request {
-        Framed-IP-Address := `/usr/bin/python /usr/local/bin/unifi-return-ip -c localhost -u admin -p p4ssw0rd -v v3 -s default -m %{Calling-Station-Id}` 
+        Framed-IP-Address := `/usr/bin/python /usr/local/bin/unifi-return-ip -c localhost -u admin -p p4ssw0rd -v v4 -s default -m %{Calling-Station-Id}` 
     }
 }
 
